@@ -1,0 +1,530 @@
+/*========== Basic Css starts here ==========*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+a{
+    text-decoration: none;
+}
+ul,ol{
+    padding: 0;
+    list-style-type: none;
+}
+h1,h2,h3,h4,h5,h6,p {
+    line-height: 0.8;
+    margin: 0;
+}
+body{
+    font-family: 'Nunito', sans-serif;
+    background: url('../images/background.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+}
+.text-color-secondary{
+    color: #ff595a;
+}
+/*========== Basic Css ends here ==========*/
+/*========== Header Css starts here ==========*/
+header{
+    margin-top: 8px;
+}
+.nav-item{
+    padding-left: 20px;
+}
+.navbar-link{
+    font-size: 14px;
+    font-weight: 700;
+    color: #143f6b;
+    position: relative;
+    padding: 0;
+}
+.navbar-link::before{
+    content: url('../images/hoverEllipse.png');
+    position: absolute;
+    top: 0%;
+    left: 0;
+    opacity: 0;
+    visibility: hidden;
+    transition: all linear .3s;
+}
+.navbar-link:hover{
+    color: #ff595a;
+}
+.navbar-link:hover::before{
+    opacity: 1;
+    visibility: visible;
+}
+.navbar-btn{
+    padding: 14px 24px;
+    border-radius: 50px;
+    color: #ffff;
+    background-color: #ff595a;
+    text-align: center;
+    box-shadow: rgb(255, 89, 90, .5) 0px 8px 24px;
+}
+.navbar-btn:hover{
+    color: #ffff;
+}
+/*========== Header Css ends here ==========*/
+
+
+/*========== Banner Css starts here ==========*/
+#banner{
+    margin-top: 90px;
+}
+.banner-left h4{
+    font-size: 20px;
+    color: #ff595a;
+    font-weight: 700;
+    padding-bottom: 32px;
+}
+.banner-left h1{
+    font-size: 50px;
+    line-height: 60px;
+    color: #143f6b;
+    font-weight: 800;
+}
+.banner-left p{
+    font-size: 18px;
+    line-height: 30px;
+    color: #40566c;
+    font-weight: 400;
+    padding-top: 28px;
+}
+.banner-left-btn{
+    padding-top: 50px;
+    display: flex;
+    align-items: center;
+}
+.banner-btn{
+    padding: 14px 24px;
+    border-radius: 50px;
+    color: #ffff;
+    background-color: #ff595a;
+    text-align: center;
+    box-shadow: rgb(255, 89, 90, .5) 0px 8px 24px;
+    margin-right: 10px;
+}
+.banner-left-btn i{
+    text-align: center;
+    line-height: 50px;
+    height: 50px;
+    width: 50px;
+    background-color: #ffff;
+    color: #143f6b;
+    border-radius: 50%;
+}
+/*========== Banner Css ends here ==========*/
+/*========== Clients Css starts here ==========*/
+#clients{
+    margin-top: 120px;
+    margin-bottom: 140px;
+}
+.clients-header{
+    padding-bottom: 50px;
+}
+.clients-header h1{
+    font-size: 30px;
+    line-height: 36px;
+    color: #143f6b;
+    font-weight: 800;
+    text-align: center;
+}
+.client-container{
+    padding: 80px 90px;
+    background-color: rgb(255, 255, 255, .5);
+    border-radius: 20px;
+}
+/*========== Clients Css ends here ==========*/
+/*========== About Css starts here ==========*/
+#about{
+    position: relative;
+}
+#about::before{
+    content: url('../images/section-shape.png');
+    position: absolute;
+    top: -25%;
+    left: 0;
+}
+.about-right-header h4{
+    font-size: 18px;
+    letter-spacing: 0px;
+    line-height: 70px;
+    color: #ff595a;
+    font-weight: 700;
+}
+.about-right-header h1{
+    font-size: 40px;
+    letter-spacing: -1px;
+    line-height: 50px;
+    color: #143f6b;
+    font-weight: 800;
+}
+.about-right-header p{
+    font-size: 18px;
+    line-height: 30px;
+    color: #40566c;
+    font-weight: 400;
+    padding-top: 16px;
+    padding-bottom: 40px;
+}
+.about-right-list-item{
+    display: flex;
+    align-items: center;
+    padding-bottom: 12px;
+}
+.about-right-list-item i{
+    color: #ffff;
+    background-color: #ff595a;
+    border-radius: 50%;
+    width: 25px;
+    height: 25px;
+    text-align: center;
+    line-height: 25px;
+}
+.about-right-list-item h6{
+    margin-left: 10px;
+    font-size: 18px;
+    line-height: 30px;
+    color: #143f6b;
+    font-weight: 700;
+}
+.about-right-btn{
+    padding-top: 40px;
+}
+.about-btn{
+    font-size: 18px;
+    color: #ffffff;
+    font-weight: 600;
+    padding: 14px 24px;
+    border-radius: 50px;
+    background-color: #ff595a;
+    text-align: center;
+    box-shadow: rgb(255, 89, 90, .5) 0px 8px 24px;
+}
+.about-container{
+    padding-bottom: 50px;
+}
+/*========== About Css ends here ==========*/
+/*========== Solution Css starts here ==========*/
+#solution{
+    padding-top: 90px;
+}
+.solution-header h4{
+    font-size: 18px;
+    letter-spacing: 0px;
+    line-height: 70px;
+    color: #ff595a;
+    font-weight: 700;
+    text-align: center;
+}
+.solution-header h1{
+    font-size: 40px;
+    letter-spacing: -1px;
+    line-height: 50px;
+    color: #143f6b;
+    font-weight: 800;
+    text-align: center;
+}
+.solution-header{
+    padding-bottom: 65px;
+}
+.solution-card-text h4{
+    font-size: 20px;
+    letter-spacing: 0px;
+    line-height: 70px;
+    color: #143f6b;
+    font-weight: 800;
+}
+.solution-card-text p{
+    font-size: 16px;
+    letter-spacing: 0px;
+    line-height: 26px;
+    color: #777777;
+    font-weight: 400;
+}
+.solution-card-btm{
+    padding-top: 28px;
+    color: #777777;
+}
+.solution-card-btm a{
+    font-size: 14px;
+    letter-spacing: 0px;
+    line-height: 26px;
+    color: #777777;
+    font-weight: 700;
+    margin-right: 10px; 
+    display: flex;
+    align-items: center;
+}
+.solution-card-btm a i{
+    margin-left: 10px;
+}
+.solution-item{
+    border-radius: 20px;
+    background-color: rgb(255, 255, 255, .4);
+    border: none;
+    transition: all linear .3s;
+}
+.solution-item-icon{
+    margin-left: -18%;
+    margin-bottom: -20%;
+}
+.solution-item:hover{
+    background-color: rgb(255, 255, 255);
+}
+.solution-card-body{
+    padding: 34px;
+}
+/*========== Solution Css ends here ==========*/
+/*========== Test Css starts here ==========*/
+#test{
+    margin-top: 180px;
+    position: relative;
+}
+#test::before{
+    content: url('../images/section-shape.png');
+    position: absolute;
+    top: -34%;
+    left: 0;
+}
+.test-left-header h4{
+    font-size: 18px;
+    letter-spacing: 0px;
+    line-height: 70px;
+    color: #ff595a;
+    font-weight: 700;
+}
+.test-left-header h1{
+    font-size: 40px;
+    letter-spacing: -1px;
+    line-height: 50px;
+    color: #143f6b;
+    font-weight: 800;
+}
+.test-left-header p{
+    font-size: 18px;
+    line-height: 30px;
+    color: #40566c;
+    font-weight: 400;
+    padding-top: 20px;
+}
+.test-left-form{
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+.test-left-form-field::placeholder{
+    font-size: 14px;
+    color: #40566c;
+    font-weight: 600;
+}
+.test-form-left{
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+    border-top-left-radius: 25px;
+    border-bottom-left-radius: 25px;
+    padding: 10px 20px;
+}
+.test-form-right{
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+    border-top-right-radius: 25px;
+    border-bottom-right-radius: 25px;
+    padding: 10px 20px;
+}
+.form-control:focus{
+    box-shadow: none;
+    border: none;
+}
+.test-btn-wrapper{
+    padding-top: 50px;
+}
+.test-btn{
+    padding: 14px 24px;
+    border-radius: 50px;
+    color: #ffff;
+    background-color: #ff595a;
+    text-align: center;
+    box-shadow: rgb(255, 89, 90, .5) 0px 8px 24px;
+}
+/*========== Test Css ends here ==========*/
+/*========== Pricing Css starts here ==========*/
+#pricing{
+    position: relative;
+    margin-top: 140px;
+}
+#pricing::after{
+    content: url('../images/section-shape.png');
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+.pricing-item-wrapper{
+    padding-top: 85px;
+}
+.pricing-section-header h4{
+    font-size: 18px;
+    letter-spacing: 0px;
+    line-height: 70px;
+    color: #ff595a;
+    font-weight: 700;
+    text-align: center;
+}
+.pricing-section-header h2{
+    font-size: 40px;
+    letter-spacing: -1px;
+    line-height: 50px;
+    color: #143f6b;
+    font-weight: 800;
+    text-align: center;
+}
+.pricing-body-icon {
+    width: 70px;
+    text-align: center;
+    line-height: 70px;
+    height: 70px;
+    background-color: white;
+    border-radius: 50%;
+}
+.pricing-body-header h5{
+    font-size: 20px;
+    letter-spacing: 0px;
+    line-height: 70px;
+    color: #143f6b;
+    font-weight: 800;
+}
+.pricing-list-item{
+    display: flex;
+    align-items: center;
+}
+.pricing-list-item i{
+    font-weight: 100;
+    font-size: 12px;
+    color: white;
+    height: 20px;
+    width: 20px;
+    background-color: #143f6b;
+    text-align: center;
+    line-height: 20px;
+    border-radius: 50%;
+}
+.pricing-list-item h6{
+    font-size: 18px;
+    line-height: 30px;
+    color: #777777;
+    font-weight: 400;
+}
+.secondary-list-bg{
+    background-color: #ff595a!important;
+}
+.pricing-list-item h6{
+    margin-left: 20px;
+}
+.pricing-list-item{
+    padding-bottom: 10px;
+}
+.pricing-price h3{
+    font-size: 40px;
+    letter-spacing: -1px;
+    line-height: 70px;
+    color: #143f6b;
+    font-weight: 800;
+    padding-bottom: 32px;
+}
+.price-btn{
+    color: #143f6b;
+    padding: 16px 60px;
+    border: 1px solid #143f6b;
+    border-radius: 40px;
+    box-shadow: rgb(20, 63, 107, .5) 0px 8px 24px;
+}
+.pricing-body{
+    padding: 40px;
+    border-radius: 25px;
+}
+.pricing-card{
+    border-radius: 30px;
+    background-color: rgb(255, 255, 255, .4);
+    border: none;
+}
+.pricing-middle{
+    padding-top: 70px;
+    padding-bottom: 70px;
+}
+.middle-pricing{
+    margin-top: -27px;
+}
+.middle-pricing-card{
+    background-color: white;
+    border: 2px solid #ff595a;
+}
+.pricing-middle-btn{
+    background-color: #ff595a;
+    color: white;
+    border: none;
+    box-shadow: rgb(255, 89, 90, .5) 0px 8px 24px;
+}
+.pricing-middle-btn:hover{
+    color: white;
+}
+.duration{
+    font-size: 20px;
+}
+/*========== Pricing Css ends here ==========*/
+/*========== Story Css starts here ==========*/
+#story{
+    margin-top: 140px;
+    margin-bottom: 140px;
+}
+.story-section-header h4{
+    font-size: 18px;
+    letter-spacing: 0px;
+    line-height: 70px;
+    color: #ff595a;
+    font-weight: 700;
+}
+.story-section-header h2{
+    font-size: 40px;
+    letter-spacing: -1px;
+    line-height: 50px;
+    color: #143f6b;
+    font-weight: 800;
+}
+.story-section-header p{
+    font-size: 18px;
+    line-height: 30px;
+    color: #40566c;
+    font-weight: 400;
+    padding-top: 38px;
+    padding-bottom: 45px;
+}
+.story-counter-head h4{
+    font-size: 40px;
+    line-height: 30px;
+    color: #07cab2;
+    font-weight: 700;
+}
+.story-counter-head p{
+    line-height: 22px;
+    padding-right: 20px;
+    padding-top: 14px;
+    font-size: 18px;
+    color: #143f6b;
+    font-weight: 700;
+}
+.story-button{
+    margin-top: 50px;
+}
+.story-btn{
+    padding: 14px 24px;
+    border-radius: 50px;
+    color: #ffff;
+    background-color: #ff595a;
+    text-align: center;
+    box-shadow: rgb(255, 89, 90, .5) 0px 8px 24px;
+}
+/*========== Story Css ends here ==========*/
+/*========== Header Css starts here ==========*/
+/*========== Header Css ends here ==========*/
