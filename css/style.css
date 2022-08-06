@@ -17,10 +17,7 @@ h1,h2,h3,h4,h5,h6,p {
 }
 body{
     font-family: 'Nunito', sans-serif;
-    background: url('../images/background.png');
-    background-position: center;
-    background-repeat: no-repeat;
-    width: 100%;
+    background-image: linear-gradient(90deg, #fbf1fb 0%, #d9f3f5 33%, #f7f1fb 68%, #d9f5f5 100%);
 }
 .text-color-secondary{
     color: #ff595a;
@@ -62,7 +59,7 @@ header{
     color: #ffff;
     background-color: #ff595a;
     text-align: center;
-    box-shadow: rgb(255, 89, 90, .5) 0px 8px 24px;
+    filter: drop-shadow(0px 10px 15px rgba(255,89,90,0.5));
 }
 .navbar-btn:hover{
     color: #ffff;
@@ -104,7 +101,7 @@ header{
     color: #ffff;
     background-color: #ff595a;
     text-align: center;
-    box-shadow: rgb(255, 89, 90, .5) 0px 8px 24px;
+    filter: drop-shadow(0px 10px 15px rgba(255,89,90,0.5));
     margin-right: 10px;
 }
 .banner-left-btn i{
@@ -119,7 +116,7 @@ header{
 /*========== Banner Css ends here ==========*/
 /*========== Clients Css starts here ==========*/
 #clients{
-    margin-top: 120px;
+    margin-top: 90px;
     margin-bottom: 140px;
 }
 .clients-header{
@@ -202,7 +199,7 @@ header{
     border-radius: 50px;
     background-color: #ff595a;
     text-align: center;
-    box-shadow: rgb(255, 89, 90, .5) 0px 8px 24px;
+    filter: drop-shadow(0px 10px 15px rgba(255,89,90,0.5));
 }
 .about-container{
     padding-bottom: 50px;
@@ -211,6 +208,8 @@ header{
 /*========== Solution Css starts here ==========*/
 #solution{
     padding-top: 90px;
+}.solution-container{
+    position: relative;
 }
 .solution-header h4{
     font-size: 18px;
@@ -219,6 +218,12 @@ header{
     color: #ff595a;
     font-weight: 700;
     text-align: center;
+}
+.solution-container::after{
+    content: url('../images/section-shape.png');
+    position: absolute;
+    top: 0;
+    right: 0;
 }
 .solution-header h1{
     font-size: 40px;
@@ -281,13 +286,13 @@ header{
 /*========== Solution Css ends here ==========*/
 /*========== Test Css starts here ==========*/
 #test{
-    margin-top: 180px;
+    margin-top: 150px;
     position: relative;
 }
 #test::before{
     content: url('../images/section-shape.png');
     position: absolute;
-    top: -34%;
+    top: -40%;
     left: 0;
 }
 .test-left-header h4{
@@ -347,13 +352,13 @@ header{
     color: #ffff;
     background-color: #ff595a;
     text-align: center;
-    box-shadow: rgb(255, 89, 90, .5) 0px 8px 24px;
+    filter: drop-shadow(0px 10px 15px rgba(255,89,90,0.5));
 }
 /*========== Test Css ends here ==========*/
 /*========== Pricing Css starts here ==========*/
 #pricing{
     position: relative;
-    margin-top: 140px;
+    margin-top: 120px;
 }
 #pricing::after{
     content: url('../images/section-shape.png');
@@ -464,7 +469,7 @@ header{
     background-color: #ff595a;
     color: white;
     border: none;
-    box-shadow: rgb(255, 89, 90, .5) 0px 8px 24px;
+    filter: drop-shadow(0px 10px 15px rgba(255,89,90,0.5));
 }
 .pricing-middle-btn:hover{
     color: white;
@@ -523,7 +528,7 @@ header{
     color: #ffff;
     background-color: #ff595a;
     text-align: center;
-    box-shadow: rgb(255, 89, 90, .5) 0px 8px 24px;
+    filter: drop-shadow(0px 10px 15px rgba(255,89,90,0.5));
 }
 /*========== Story Css ends here ==========*/
 /*========== Review Css starts here ==========*/
@@ -684,12 +689,6 @@ header{
     filter: grayscale(100%);
     transition: all linear .3s;
 }
-.news-item:hover{
-    filter: grayscale(0);
-}
-.news-item:hover .news-card{
-    border: 2px solid #ff595a;
-}
 .slick-dots{
     display: flex!important;
     justify-content: center;
@@ -715,12 +714,158 @@ header{
     border: none;
 }
 .news-container {
-    padding-top: 120px;
-    padding-bottom: 90px;
+    padding-top: 90px;
+    padding-bottom: 60px;
     background-color: rgb(255, 255, 255, .5);
 }
+.news-slider .slick-list .slick-track .slick-current .news-card{
+    border: 2px solid #ff595a;
+}
+.news-slider .slick-list .slick-track .slick-current .news-item{
+    filter: grayscale(0);
+}
 /*========== News Css ends here ==========*/
-/*========== Header Css starts here ==========*/
-/*========== Header Css ends here ==========*/
-/*========== Header Css starts here ==========*/
-/*========== Header Css ends here ==========*/
+/*========== Subscribe Css starts here ==========*/
+#subscribe{
+    margin-top: 150px;
+    margin-bottom: 150px;
+    position: relative;
+}
+#subscribe::after{
+    content: url('../images/section-shape.png');
+    position: absolute;
+    top: -50%;
+    right: 0;
+}
+.subscribe-right-header h4{
+    font-size: 18px;
+    letter-spacing: 0px;
+    line-height: 70px;
+    color: #ff595a;
+    font-weight: 700;
+}
+.subscribe-right-header h2{
+    font-size: 40px;
+    letter-spacing: -1px;
+    line-height: 50px;
+    color: #143f6b;
+    font-weight: 800;
+}
+.sub-input{
+    font-size: 14px;
+    color: #40566c;
+    font-weight: 600;
+}
+.subscribe-form{
+    padding-top: 50px;
+}
+.sub-input{
+    padding: 16px 26px;
+    width: 445px;
+    height: 54px;
+    border-radius: 27px;
+    filter: drop-shadow(0px 10px 15px rgba(0,0,0,0.1));
+    border: none;
+}
+.sub-input::placeholder{
+    font-size: 14px;
+    color: #40566c;
+    font-weight: 600;
+}
+.sub-btn{
+    padding: 12px 24px;
+    border-radius: 50px;
+    color: #ffff;
+    background-color: #ff595a;
+    text-align: center;
+    filter: drop-shadow(0px 10px 15px rgba(255,89,90,0.5));
+}
+.subscribe-btn{
+    padding-top: 40px;
+}
+/*========== Subscribe Css ends here ==========*/
+/*========== Footer Css starts here ==========*/
+footer{
+    margin-bottom: 80px;
+}
+.footer-main-container{
+    padding-top: 80px;
+    background-color: rgb(255, 255, 255, .5);
+    padding-bottom: 25px;
+    border-radius: 25px;
+    padding-right: 90px;
+    padding-left: 90px;
+}
+.footer-content p {
+    padding-right: 70px;
+    padding-top: 40px;
+    font-size: 16px;
+    line-height: 24px;
+    color: #777777;
+    font-weight: 400;
+}
+.footer-list-head h5{
+    font-size: 20px;
+    color: #143f6b;
+    font-weight: 800;
+}
+.footer-list-head h6{
+    font-size: 20px;
+    color: #143f6b;
+    font-weight: 800;
+}
+.footer-list-item-wrapper {
+    padding-top: 30px;
+}
+.footer-list-item h6{
+    font-size: 16px;
+    line-height: 30px;
+    color: #777777;
+    font-weight: 400;
+    margin-left: 10px;
+}
+.footer-list-item i{
+    color: #ff595a;
+}
+.footer-contact-text h4{
+    font-size: 20px;
+    color: #143f6b;
+    font-weight: 800;
+    padding-bottom: 32px;
+}
+.footer-contact-text p{
+    font-size: 16px;
+    line-height: 24px;
+    color: #777777;
+    font-weight: 400;
+}
+.footer-contact-text-bottom h6{
+    font-size: 16px;
+    line-height: 30px;
+    color: #777777;
+    font-weight: 400;
+}
+.footer-contact-text-bottom{
+    padding-top: 10px;
+}
+.footer-contact {
+    padding-right: 80px;
+}
+.footer-bottom-line{
+    padding-top: 30px;
+    border-top: 1px solid rgb(96, 100, 128, .2);
+}
+.footer-container{
+    padding-bottom: 40px;
+}
+.footer-copyright h6{
+    font-size: 16px;
+    line-height: 24px;
+    color: #777777;
+    font-weight: 400;
+}
+.footer-icons i{
+    font-size: 16px;
+    color: #777777;
+}
+/*========== Footer Css ends here ==========*/

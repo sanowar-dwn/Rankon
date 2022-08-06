@@ -91,8 +91,10 @@ $(function(){
         arrows: false,
         infinite: true,
         speed: 300,
+        centerMode:true,
         slidesToShow: 3,
-        slidesToScroll: 2,
+        slidesToScroll: 3,
+        centerPadding: '0',
         responsive: [
           {
             breakpoint: 1024,
