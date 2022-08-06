@@ -526,5 +526,201 @@ header{
     box-shadow: rgb(255, 89, 90, .5) 0px 8px 24px;
 }
 /*========== Story Css ends here ==========*/
+/*========== Review Css starts here ==========*/
+#review{
+    margin-bottom: 100px;
+    position: relative;
+}
+#review::before{
+    content: url('../images/section-shape.png');
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.review-header h5{
+    font-size: 18px;
+    letter-spacing: 0px;
+    line-height: 70px;
+    color: #ff595a;
+    font-weight: 700;
+    text-align: center;
+}
+.review-header h1{
+    font-size: 40px;
+    letter-spacing: -1px;
+    line-height: 50px;
+    color: #143f6b;
+    font-weight: 800;
+    text-align: center;
+}
+.review-item-img img{
+    margin-left: -25px;
+}
+.review-img-txt h5{
+    font-size: 20px;
+    letter-spacing: 0px;
+    line-height: 20px;
+    color: #143f6b;
+    font-weight: 800;
+}
+.review-img-txt h6{
+    font-size: 16px;
+    line-height: 30px;
+    color: #777777;
+    font-weight: 400;
+}
+.review-text p{
+    font-size: 18px;
+    line-height: 30px;
+    color: #777777;
+    font-weight: 400;
+}
+.review-stars{
+    padding-top: 30px;
+}
+.review-stars i{
+    color: #FFA233;
+    font-size: 22px;
+}
+.review-section-header{
+    padding-bottom: 80px;
+}
+.review-card{
+    padding: 35px;
+    border-radius: 25px;
+    border: none;
+}
+.review-slider .slick-list{
+    padding-bottom: 180px!important;
+    padding-top: 0px!important;
+}
+.review-slider-item-wrapper{
+    opacity: .4;
+}
+.slick-current{
+    padding-bottom: 30px;
+    opacity: 1!important;
+}
+.review-arrow{
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    border: 1px solid #143f6b;
+    color: #143f6b;
+    border-radius: 50%;
+    transition: all linear .3s;
+}
+.review-arrow:hover{
+    background-color: #ff595a;
+    color: white;
+    border: none;
+}
+.review-slider-main{
+    position: relative;
+}
+.review-arrow-wrapper{
+    margin-bottom: 15px;
+}
+.review-slider-arrows{
+    position: absolute;
+    top: 50%;
+    left: -6%;
+}
+/*========== Review Css ends here ==========*/
+/*========== News Css starts here ==========*/
+#news{
+    margin-bottom: 80px;
+}
+.news-header h5{
+    font-size: 18px;
+    letter-spacing: 0px;
+    line-height: 70px;
+    color: #ff595a;
+    font-weight: 700;
+    text-align: center;
+}
+.news-header h1{
+    font-size: 40px;
+    letter-spacing: -1px;
+    line-height: 50px;
+    color: #143f6b;
+    font-weight: 800;
+    text-align: center;
+}
+.news-section-header{
+    padding-bottom: 80px;
+}
+.news-heading{
+    padding-top: 20px;
+}
+.card-img{
+    padding-top: 30px;
+}
+.news-heading h6{
+    font-size: 14px;
+    letter-spacing: 0px;
+    line-height: 26px;
+    color: #777777;
+    font-weight: 400;
+    text-align: center;
+}
+.news-heading h2{
+    font-size: 20px;
+    letter-spacing: 0px;
+    line-height: 30px;
+    color: #ff595a;
+    font-weight: 800;
+    text-align: center;
+}
+.news-card{
+    border-radius: 25px;
+    border: none;
+}
+.news-heading{
+    padding-bottom: 10px;
+}
+.news-item{
+    filter: grayscale(100%);
+    transition: all linear .3s;
+}
+.news-item:hover{
+    filter: grayscale(0);
+}
+.news-item:hover .news-card{
+    border: 2px solid #ff595a;
+}
+.slick-dots{
+    display: flex!important;
+    justify-content: center;
+}
+.slick-dots li{
+    padding: 0 10px;
+}
+.slick-dots li button {
+    background-color: #191919;
+    border-radius: 50%;
+    display: inline-block;
+    height: 10px;
+    opacity: .2;
+    transition: .3s ease;
+    width: 10px;
+    text-indent: -9999px;
+    overflow:hidden;
+    /* more CSS */
+}
+.slick-dots .slick-active button {
+    opacity: 1;
+    background-color: #ff595a;
+    border: none;
+}
+.news-container {
+    padding-top: 120px;
+    padding-bottom: 90px;
+    background-color: rgb(255, 255, 255, .5);
+}
+/*========== News Css ends here ==========*/
+/*========== Header Css starts here ==========*/
+/*========== Header Css ends here ==========*/
 /*========== Header Css starts here ==========*/
 /*========== Header Css ends here ==========*/
