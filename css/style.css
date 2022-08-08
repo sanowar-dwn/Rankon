@@ -41,7 +41,7 @@ header{
 .navbar-link::before{
     content: url('../images/hoverEllipse.png');
     position: absolute;
-    top: 0%;
+    top: -3%;
     left: 0;
     opacity: 0;
     visibility: hidden;
@@ -275,8 +275,14 @@ header{
     transition: all linear .3s;
 }
 .solution-item-icon{
-    margin-left: -18%;
-    margin-bottom: -20%;
+    width: 80px;
+    height: 80px;
+    border-radius: 40px;
+    filter: drop-shadow(0px 20px 25px rgba(0,174,239,0.2));
+    background-image: linear-gradient(180deg, #00adef 0%, #aee8ff 100%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .solution-item:hover{
     background-color: rgb(255, 255, 255);
@@ -284,10 +290,30 @@ header{
 .solution-card-body{
     padding: 34px;
 }
+.solution-item-wrapper:nth-child(2) .solution-item-icon{
+    filter: drop-shadow(0px 20px 25px rgba(248,78,179,0.2));
+    background-image: linear-gradient(180deg, #f84db2 0%, #ffdcf0 100%);
+}
+.solution-item-wrapper:nth-child(3) .solution-item-icon{
+    filter: drop-shadow(0px 20px 25px rgba(0,166,81,0.2));
+    background-image: linear-gradient(180deg, #00a550 0%, #9af7c7 100%);
+}
+.solution-item-wrapper:nth-child(4) .solution-item-icon{
+    filter: drop-shadow(0px 20px 25px rgba(237,20,91,0.2));
+    background-image: linear-gradient(180deg, #ed135a 0%, #ffa9c5 100%);
+}
+.solution-item-wrapper:nth-child(5) .solution-item-icon{
+    filter: drop-shadow(0px 20px 25px rgba(247,148,29,0.2));
+    background-image: linear-gradient(180deg, #f7931d 0%, #ffd098 100%);
+}
+.solution-item-wrapper:nth-child(6) .solution-item-icon{
+    filter: drop-shadow(0px 20px 25px rgba(239,0,0,0.2));
+    background-image: linear-gradient(180deg, #ef0000 0%, #ffadad 100%);
+}
 /*========== Solution Css ends here ==========*/
 /*========== Test Css starts here ==========*/
 #test{
-    margin-top: 150px;
+    margin-top: 200px;
     position: relative;
 }
 #test::before{
@@ -327,13 +353,17 @@ header{
     font-weight: 600;
 }
 .test-form-left{
+    border: none;
     border-top-right-radius: 0;
     border-bottom-right-radius: 0;
     border-top-left-radius: 25px;
     border-bottom-left-radius: 25px;
     padding: 10px 20px;
+    border-right: 1px solid rgb(64, 86, 108, .2);
 }
 .test-form-right{
+    border-left: 1px solid rgb(64, 86, 108, .2);
+    border: none;
     border-top-left-radius: 0;
     border-bottom-left-radius: 0;
     border-top-right-radius: 25px;
@@ -342,7 +372,6 @@ header{
 }
 .form-control:focus{
     box-shadow: none;
-    border: none;
 }
 .test-btn-wrapper{
     padding-top: 50px;
@@ -534,7 +563,7 @@ header{
 /*========== Story Css ends here ==========*/
 /*========== Review Css starts here ==========*/
 #review{
-    margin-bottom: 100px;
+    margin-bottom: 150px;
     position: relative;
 }
 #review::before{
@@ -903,7 +932,11 @@ footer{
 /*========== Page Header Css ends here ==========*/
 /*========== Process Header Css starts here ==========*/
 #process{
-    margin-bottom: 200px;
+    margin-top: 90px;
+    margin-bottom: 100px;
+}
+.process-section-header{
+    padding-bottom: 70px;
 }
 .process-section-header h6{
     font-size: 18px;
@@ -989,21 +1022,314 @@ footer{
 .process-card:hover::before{
     background-color: #ff595a;
 }
-.abc:last-child .process-item{
-   display: none;
+.process-item-main:nth-child(2) .process-card-icon{
+    filter: drop-shadow(0px 20px 25px rgba(248,78,179,0.2));
+    background-image: linear-gradient(180deg, #f84db2 0%, #ffdcf0 100%);
+}
+.process-item-main:nth-child(2) .process-card::before{
+    content: '2';
+}
+.process-item-main:nth-child(3) .process-card-icon{
+    filter: drop-shadow(0px 20px 25px rgba(0,166,81,0.2));
+    background-image: linear-gradient(180deg, #00a550 0%, #9af7c7 100%);
+}
+.process-item-main:nth-child(3) .process-card::before{
+    content: '3';
+}
+.process-item-main:nth-child(4) .process-card-icon{
+    filter: drop-shadow(0px 20px 25px rgba(239,0,0,0.2));
+    background-image: linear-gradient(180deg, #ef0000 0%, #ffadad 100%);
+}
+.process-item-main:nth-child(4) .process-card::before{
+    content: '4';
 }
 /*========== Process Header Css ends here ==========*/
-/*========== Page Header Css starts here ==========*/
+/*========== Team Header Css starts here ==========*/
+#team{
+    margin-top: 70px;
+    margin-bottom: 150px;
+}
+.team-section-header{
+    padding-bottom: 70px;
+}
+.team-section-header h6{
+    font-size: 18px;
+    letter-spacing: 0px;
+    line-height: 70px;
+    color: #ff595a;
+    font-weight: 700;
+}
+.team-section-header h1{
+    font-size: 40px;
+    letter-spacing: -1px;
+    line-height: 50px;
+    color: #143f6b;
+    font-weight: 800;
+}
+.team-card{
+    border: none;
+    width: 255px;
+    height: 260px;
+    border-radius: 20px;
+    background-color: #ffffff;
+    position: relative;
+}
+.team-name h5{
+    font-size: 20px;
+    letter-spacing: 0px;
+    line-height: 50px;
+    color: #143f6b;
+    font-weight: 800;
+    transition: all linear .3s;
+}
+.team-name h6{
+    font-size: 16px;
+    letter-spacing: 0px;
+    color: #777777;
+    font-weight: 400;
+}
+.team-img{
+    position: relative;
+}
+.team-img::after{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-radius: 20px;
+    background-image: linear-gradient(0deg, rgb(187, 47, 97, .8) 0%, rgb(197, 111, 93, .8) 100%);   
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    visibility: hidden;
+    transition: all linear .3s;
+}
+.team-card-icons {
+    position: absolute;
+    top: 40%;
+    left: 35%;
+    opacity: 0;
+    visibility: hidden;
+    transition: all linear .3s;
+}
+.team-item:hover .team-card-icons{
+    opacity: 1;
+    visibility: visible;
+}
+.team-item:hover .team-img::after{
+    opacity: 1;
+    visibility: visible;
+}
+.team-item:hover .team-name h5{
+    color: #ff595a;
+}
+.team-card-icons i{
+    font-size: 20px;
+    line-height: 50px;
+    color: #fdfdfd;
+    margin: 0px 5px;
+}
 
-/*========== Page Header Css ends here ==========*/
-/*========== Page Header Css starts here ==========*/
-
-/*========== Page Header Css ends here ==========*/
-/*========== Page Header Css starts here ==========*/
-
-/*========== Page Header Css ends here ==========*/
-/*========== Page Header Css starts here ==========*/
-
-/*========== Page Header Css ends here ==========*/
+/*========== Team Header Css ends here ==========*/
+/*========== Keyword Header Css starts here ==========*/
+#keyword{
+    position: relative;
+}
+#keyword::after{
+    content: url('../images/section-shape.png');
+    position: absolute;
+    top: -26%;
+    right: 0;
+}
+/*========== Keyword Header Css ends here ==========*/
+/*========== Story-About Css starts here ==========*/
+#story-about{
+    position: relative;
+}
+#story-about::before{
+    content: url('../images/section-shape.png');
+    position: absolute;
+    top: -35%;
+    left: 0;
+}
+/*========== Story-About Css ends here ==========*/
+/*========== Review-about Css starts here ==========*/
+#review-about{
+    margin-top: 150px;
+    margin-bottom: 150px;
+    position: relative;
+}
+#review-about::before{
+    content: url('../images/section-shape.png');
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+/*========== Review-about Css ends here ==========*/
 
 /* ++++++++++++++++++++ ABOUT PAGE CSS ENDS HERE ++++++++++++++++++++ */
+/* ++++++++++++++++++++ SERVICES PAGE CSS ENDS HERE ++++++++++++++++++++ */
+/*========== News-services Css ends here ==========*/
+#news-services{
+    margin-top: 150px;
+}
+/*========== News-services Css ends here ==========*/
+/*========== Subscribe-services Css starts here ==========*/
+#subscribe-services{
+    margin-top: 150px;
+    margin-bottom: 150px;
+    position: relative;
+}
+#subscribe-services::after{
+    content: url('../images/section-shape.png');
+    position: absolute;
+    top: -50%;
+    left: 0;
+}
+/*========== Subscribe-services Css ends here ==========*/
+
+/* ++++++++++++++++++++ SERVICES PAGE CSS ENDS HERE ++++++++++++++++++++ */
+/* ++++++++++++++++++++ COMING-SOON PAGE CSS STARTS HERE ++++++++++++++++++++ */
+#comingsoon{
+    margin-top: 150px;
+    margin-bottom: 150px;
+}
+.soon-header h1{
+    font-size: 80px;
+    line-height: 90px;
+    color: #143f6b;
+    font-weight: 800;
+    text-align: center;
+    padding-top: 70px;
+}
+.soon-header p{
+    font-size: 24px;
+    line-height: 40px;
+    color: #40566c;
+    font-weight: 400;
+    text-align: center;
+}
+.soon-form-input{
+    padding: 16px 26px;
+    width: 445px;
+    height: 54px;
+    border-radius: 27px;
+    filter: drop-shadow(0px 10px 15px rgba(0,0,0,0.1));
+    border: none;
+}
+.soon-btn-wrapper{
+    width: 135px;
+    height: 54px;
+    border-radius: 27px;
+    filter: drop-shadow(0px 10px 15px rgba(255,89,90,0.5));
+    background-color: #ff595a;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: -40px;
+}
+.soon-btn{
+    color: white;
+}
+.coming-icons{
+    padding-top: 40px;
+    text-align: center;
+}
+.coming-icons i{
+    font-size: 24px;
+    color: #40566c;
+    margin-left: 6px;
+}
+.coming-footer h6{
+    font-size: 16px;
+    line-height: 24px;
+    color: #777777;
+    font-weight: 400;
+}
+#comingsoon-footer{
+    margin: 100px 0px;
+}
+/* ++++++++++++++++++++ COMING-SOON PAGE CSS ENDS HERE ++++++++++++++++++++ */
+/* ++++++++++++++++++++ CONTACT PAGE CSS STARTS HERE ++++++++++++++++++++ */
+/*========== Contact Css starts here ==========*/
+#contact{
+    margin-bottom: 150px;
+}
+.contact-right-header h4{
+    font-size: 18px;
+    letter-spacing: 0px;
+    line-height: 70px;
+    color: #ff595a;
+    font-weight: 700;
+}
+.contact-right-header h1{
+    font-size: 40px;
+    letter-spacing: -1px;
+    line-height: 50px;
+    color: #143f6b;
+    font-weight: 800;
+}
+.contact-right-form{
+    padding-top: 40px;
+}
+.contact-form-input{
+    padding: 16px 26px;
+    width: 445px;
+    height: 54px;
+    border-radius: 27px;
+    filter: drop-shadow(0px 10px 15px rgba(0,0,0,0.1));
+    border: none;
+}
+.contact-form-textarea{
+    width: 445px;
+    height: 200px;
+    border-radius: 20px;
+    background-color: #ffffff;
+    border: none;
+    padding: 20px;
+}
+.contact-form-input::placeholder{
+    font-size: 14px;
+    color: #40566c;
+    font-weight: 600;
+    opacity: .5;
+}
+.contact-form-textarea::placeholder{
+    font-size: 14px;
+    color: #40566c;
+    font-weight: 600;
+    opacity: .5;
+}
+.contact-btn-wrapper{
+    width: 215px;
+    height: 54px;
+    border-radius: 27px;
+    filter: drop-shadow(0px 10px 15px rgba(255,89,90,0.5));
+    background-color: #ff595a;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.contact-btn{
+    color: #ffff;
+}
+.contact-btn:hover{
+    color: #ffff;
+}
+/*========== Contact Css ends here ==========*/
+/*========== Maps Css starts here ==========*/
+.google-maps {
+    position: relative;
+    padding-bottom: 45%; 
+    height: 0;
+    overflow: hidden;
+  }
+  .google-maps iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100% !important;
+    height: 352px !important;
+  }
+/*========== Maps Css ends here ==========*/
+/* ++++++++++++++++++++ CONTACT PAGE CSS ENDS HERE ++++++++++++++++++++ */

@@ -1,0 +1,104 @@
+/* Large devices (portrait phones, less than 1400px) */
+@media(min-width:1200px) and (max-width:1300.98px){
+    .review-slider-arrows {
+        left: -2%;
+    }
+}
+/* Large devices (portrait phones, less than 1200px) */
+@media(min-width:992px) and (max-width:1199.98px){
+    .review-slider-arrows {
+        top: 102%;
+        display: flex;
+        left: 13%;
+    }
+    .review-arrow {
+        margin: 0 8px;
+    }
+}
+/* Mediuam devices (portrait phones, less than 992px) */
+@media(min-width:768px) and (max-width:991.98px){
+    .banner-row{
+        display: flex;
+        align-items: center;
+    }
+    #about::before {
+        top: -15%;
+    }
+    .about-right-list-item h6 {
+        font-size: 14px;
+        line-height: 25px;
+    }
+    .solution-container::after {
+        top: -6%;
+    }
+    #test::before {
+        top: -40%;
+    }
+    #pricing::after {
+        top: -20%;
+    }
+    .price-btn {
+        padding: 16px 30px;
+    }
+    .pricing-list-item h6 {
+        font-size: 12px;
+        line-height: 24px;
+    }
+    .pricing-body-icon {
+        margin: 0 auto;
+    }
+    .pricing-middle {
+        padding-top: 65px;
+        padding-bottom: 65px;
+    }
+    .story-counter{
+        display: none;
+    }
+    .story-button{
+        text-align: center;
+    }
+    .review-slider-arrows {
+        top: 102%;
+        display: flex;
+        left: 13%;
+    }
+    .review-arrow {
+        margin: 0 8px;
+    }
+    .review-row{
+        display: flex;
+        align-items: center;
+    }
+    #review::before {
+        top: -16%;
+    }
+    .subscribe-left{
+        text-align: center;
+    }
+    .subscribe-right{
+        text-align: center;
+    }
+    .subscribe-form-group{
+        display: flex;
+        justify-content: center;
+    }
+    #subscribe::after {
+        top: -30%
+    }
+    .footer-content p {
+        padding-right: 0px;
+        padding-top: 10px;
+    }
+    .footer-contact{
+        padding-top: 20px;
+    }
+}
+/* Small devices (portrait phones, less than 768px) */
+@media(min-width:576px) and (max-width:767.98px){
+}
+/*XS Device */
+@media(max-width:575px){
+
+}
+
+
