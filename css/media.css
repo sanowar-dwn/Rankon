@@ -3,6 +3,10 @@
     .review-slider-arrows {
         left: -2%;
     }
+    .xs-device-team{
+        display: none;
+            
+    }
 }
 /* Large devices (portrait phones, less than 1200px) */
 @media(min-width:992px) and (max-width:1199.98px){
@@ -13,6 +17,14 @@
     }
     .review-arrow {
         margin: 0 8px;
+    }
+    .xs-device-team{
+        display: none;  
+    }
+    .about-left-img{
+        display: flex;
+        align-items: center;
+        justify-content: center;
     }
 }
 /* Mediuam devices (portrait phones, less than 992px) */
@@ -92,13 +104,556 @@
     .footer-contact{
         padding-top: 20px;
     }
+    .navbar-collapse {
+        background-color: rgb(255, 89, 90, .4);
+        border-radius: 20px;
+    }
+    .navbar-link {
+        color: white;
+    }
+    .nav-item {
+        text-align: center;
+        padding: 10px;
+    }
+    /* About page starts here */
+    .about-right{
+        text-align: center;
+    }
+    .process-item-main:last-child{
+        padding-top: 20px;
+    }
+    .about-left{
+        text-align: center;
+    }
+    .team-card {
+        margin: 0 auto;
+    }
+    .team-item-main:nth-child(3){
+        padding-top: 25px;
+    }
+    .team-item-main:nth-child(4){
+        padding-top: 25px;
+    }
+    #story-about::before {
+        top: -25%;
+    }
+    .story-left{
+        text-align: center;
+    }
+    .story-section-header{
+        text-align: center;
+    }
+    #review-about {
+        margin-top: 80px;
+    }
+    #review-about::before {
+        top: -10%;
+    }
+    .xs-device-team{
+    display: none;
+    }
+    /* About page ends here */
 }
 /* Small devices (portrait phones, less than 768px) */
 @media(min-width:576px) and (max-width:767.98px){
+    .about-right-header{
+        text-align: center;
+    }
+    #banner {
+        margin-top: 60px;
+    }
+    .banner-left{
+        text-align: center;
+    }
+    .banner-left-btn {
+        padding-top: 20px;
+        align-items: center;
+        justify-content: center;
+        padding-bottom: 20px;
+    }
+    #about::before {
+        top: -14%;
+    }
+    .about-right-header h4 {
+        text-align: center;
+    }
+    .solution-container::after {
+        top: -5%;
+    }
+    .solution-card-body {
+        text-align: center;
+    }
+    .solution-item-icon {
+        margin: 0 auto;
+    }
+    .solution-card-btm {
+        display: flex;
+        justify-content: center;
+    }
+    #test::before {
+        top: -24%;
+    }
+    .test-left-header{
+        text-align: center;
+    }
+    .test-btn-wrapper{
+        text-align: center;
+    }
+    #pricing::after {
+        top: -7%;
+    }
+    .pricing-item-main{
+        margin: 0px auto;
+        padding-bottom: 25px!important;
+    }
+    .pricing-body{
+        text-align: center;
+    }
+    .pricing-body-icon {
+        margin: 0 auto;
+    }
+    .story-counter{
+        display: none;
+    }
+    .story-button{
+        text-align: center;
+    }
+    .story-section-header h4 {
+        text-align: center;
+    }
+    .story-section-header h2 {
+        text-align: center;
+    }
+    #review::before {
+        top: -10%;
+    }
+    .review-slider-arrows {
+        top: 44%;
+        left: 35%;
+        display: flex;
+    }
+    .review-arrow {
+        margin: 0 8px;
+    }
+    .card-img img{
+        margin: 0 auto;
+    }
+    #subscribe::after {
+        top: -28%;
+    }
+    .subscribe-right-header{
+        text-align: center;
+    }
+    .sub-input {
+        margin: 0 auto;
+    }
+    .subscribe-btn{
+        text-align: center;
+    }
+    .footer-main-container {
+        padding-right: 20px;
+        padding-left: 20px;
+    }
+    .footer-content p {
+        padding-right: 25px;
+        padding-top: 14px;
+    }
+    .footer-contact {
+        padding-right: 0px; 
+    }
+    .navbar-collapse {
+        background-color: rgb(255, 89, 90, .4);
+        border-radius: 20px;
+    }
+    .navbar-link {
+        color: white;
+    }
+    .nav-item {
+        text-align: center;
+        padding: 10px;
+    }
+    /* About Page starts here */
+    .process-item-main:nth-child(3){
+        padding-top: 30px;
+    }
+    .process-item-main:nth-child(4){
+        padding-top: 30px;
+    }
+    #keyword::after {
+        display: none;
+    }
+    .team-item-main:nth-child(3){
+        padding-top: 25px;
+    }
+    .team-item-main:nth-child(4){
+        padding-top: 25px;
+    }
+    #story-about::before {
+        top: -25%;
+    }
+    #review-about {
+        margin-top: 100px;
+    }
+    #review-about::before {
+        top: -10%;
+    }
+    .xs-device-team{
+    display: none;
+    }
+    /* About Page ends here */
 }
 /*XS Device */
-@media(max-width:575px){
-
+@media(min-width:413px) and (max-width:575px){
+    .banner-left h1 {
+        font-size: 40px;
+    }
+    .client-container {
+        padding: 80px 40px;
+    }
+    .about-right-header{
+        text-align: center;
+    }
+    .about-right-header h1 {
+        font-size: 36px;
+    }
+    #banner {
+        margin-top: 60px;
+    }
+    .banner-left{
+        text-align: center;
+    }
+    .banner-left-btn {
+        padding-top: 20px;
+        align-items: center;
+        justify-content: center;
+        padding-bottom: 20px;
+    }
+    #about::before {
+        top: -14%;
+    }
+    .about-right-header h4 {
+        text-align: center;
+    }
+    .solution-container::after {
+        top: -7%;
+    }
+    .solution-card-body {
+        text-align: center;
+    }
+    .solution-item-icon {
+        margin: 0 auto;
+    }
+    .solution-card-btm {
+        display: flex;
+        justify-content: center;
+    }
+    #test::before {
+        top: -24%;
+    }
+    .test-left-header{
+        text-align: center;
+    }
+    .test-btn-wrapper{
+        text-align: center;
+    }
+    .pricing-item-wrapper {
+        padding-top: 25px;
+    }
+    #pricing::after {
+        top: -8%;
+    }
+    .pricing-item-main{
+        margin: 0px auto;
+        padding-bottom: 25px!important;
+    }
+    .pricing-body{
+        text-align: center;
+    }
+    .pricing-body-icon {
+        margin: 0 auto;
+    }
+    .story-counter{
+        display: none;
+    }
+    .story-button{
+        text-align: center;
+    }
+    .story-section-header h4 {
+        text-align: center;
+    }
+    .story-section-header h2 {
+        text-align: center;
+    }
+    #review::before {
+        top: -12%;
+        left: -6%;
+    }
+    .review-header h1 {
+        font-size: 38px;
+    }
+    .review-arrow {
+        margin: 0 8px;
+    }
+    .card-img img{
+        margin: 0 auto;
+    }
+    #subscribe::after {
+        top: -28%;
+    }
+    .subscribe-right-header{
+        text-align: center;
+    }
+    .sub-input {
+        margin: 0 auto;
+    }
+    .subscribe-btn{
+        text-align: center;
+    }
+    .footer-main-container {
+        padding-right: 20px;
+        padding-left: 20px;
+    }
+    .footer-content p {
+        padding-right: 25px;
+        padding-top: 14px;
+    }
+    .footer-contact {
+        padding-top: 15px;
+        padding-right: 0px; 
+    }
+    .sub-input {
+        width: 325px;
+    }
+    .navbar-collapse {
+        background-color: rgb(255, 89, 90, .4);
+        border-radius: 20px;
+    }
+    .navbar-link {
+        color: white;
+    }
+    .nav-item {
+        text-align: center;
+        padding: 10px;
+    }
+    /* About page starts here */
+    #keyword::after {
+        display: none;
+    }
+    .process-item-main:nth-child(3){
+        padding-top: 30px;
+    }
+    .process-item-main:nth-child(4){
+        padding-top: 30px;
+    }
+    #keyword::after {
+        display: none;
+    }
+    .team-item-main:nth-child(3){
+        padding-top: 25px;
+    }
+    .team-item-main:nth-child(4){
+        padding-top: 25px;
+    }
+    #story-about::before {
+        top: -25%;
+    }
+    #review-about {
+        margin-top: 100px;
+    }
+    #review-about::before {
+        top: -10%;
+    }
+    .review-slider-arrows {
+        top: 44%;
+        left: 35%;
+        display: flex;
+    }
+    .xs-device-team{
+        display: none;
+    }
+    /* About page ends here */
+}
+@media(max-width:412px){
+    .banner-left h1 {
+        font-size: 40px;
+    }
+    .client-container {
+        padding: 80px 40px;
+    }
+    .about-right-header{
+        text-align: center;
+    }
+    .about-right-header h1 {
+        font-size: 36px;
+    }
+    #banner {
+        margin-top: 60px;
+    }
+    .banner-left{
+        text-align: center;
+    }
+    .banner-left-btn {
+        padding-top: 20px;
+        align-items: center;
+        justify-content: center;
+        padding-bottom: 20px;
+    }
+    #about::before {
+        top: -14%;
+    }
+    .about-right-header h4 {
+        text-align: center;
+    }
+    .solution-container::after {
+        top: -7%;
+    }
+    .solution-card-body {
+        text-align: center;
+    }
+    .solution-item-icon {
+        margin: 0 auto;
+    }
+    .solution-card-btm {
+        display: flex;
+        justify-content: center;
+    }
+    #test::before {
+        top: -24%;
+    }
+    .test-left-header{
+        text-align: center;
+    }
+    .test-btn-wrapper{
+        text-align: center;
+    }
+    .pricing-item-wrapper {
+        padding-top: 25px;
+    }
+    #pricing::after {
+        top: -8%;
+    }
+    .pricing-item-main{
+        margin: 0px auto;
+        padding-bottom: 25px!important;
+    }
+    .pricing-body{
+        text-align: center;
+    }
+    .pricing-body-icon {
+        margin: 0 auto;
+    }
+    .story-counter{
+        display: none;
+    }
+    .story-button{
+        text-align: center;
+    }
+    .story-section-header h4 {
+        text-align: center;
+    }
+    .story-section-header h2 {
+        text-align: center;
+    }
+    #review::before {
+        top: -12%;
+        left: -6%;
+    }
+    .review-header h1 {
+        font-size: 38px;
+    }
+    .review-arrow {
+        margin: 0 8px;
+    }
+    .card-img img{
+        margin: 0 auto;
+    }
+    #subscribe::after {
+        top: -28%;
+    }
+    .subscribe-right-header{
+        text-align: center;
+    }
+    .sub-input {
+        margin: 0 auto;
+    }
+    .subscribe-btn{
+        text-align: center;
+    }
+    .footer-main-container {
+        padding-right: 20px;
+        padding-left: 20px;
+    }
+    .footer-content p {
+        padding-right: 25px;
+        padding-top: 14px;
+    }
+    .footer-contact {
+        padding-top: 15px;
+        padding-right: 0px; 
+    }
+    .sub-input {
+        width: 325px;
+    }
+    .navbar-collapse {
+        background-color: rgb(255, 89, 90, .4);
+        border-radius: 20px;
+    }
+    .navbar-link {
+        color: white;
+    }
+    .nav-item {
+        text-align: center;
+        padding: 10px;
+    }
+    /* About page starts here */
+    #keyword::after {
+        display: none;
+    }
+    .process-item-main:nth-child(3){
+        padding-top: 30px;
+    }
+    .process-item-main:nth-child(4){
+        padding-top: 30px;
+    }
+    #keyword::after {
+        display: none;
+    }
+    .team-item-main:nth-child(2){
+        padding-top: 25px;
+    }
+    .team-item-main:nth-child(3){
+        padding-top: 25px;
+    }
+    .team-item-main:nth-child(4){
+        padding-top: 25px;
+    }
+    #story-about::before {
+        top: -25%;
+    }
+    #review-about {
+        margin-top: 100px;
+    }
+    #review-about::before {
+        top: -10%;
+    }
+    .review-slider-arrows {
+        top: 44%;
+        left: 35%;
+        display: flex;
+    }
+    .large-device-team{
+        display: none;
+    }
+    .team-card {
+        margin: 0 auto;
+    }
+    .review-slider-arrows {
+        top: 51%;
+    }
+    #review-about::before {
+        top: -14%;
+    }
+    /* About page ends here */
 }
 
 

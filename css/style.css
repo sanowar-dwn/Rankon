@@ -17,6 +17,7 @@ h1,h2,h3,h4,h5,h6,p {
     margin: 0;
 }
 body{
+    width: 100%;
     font-family: 'Nunito', sans-serif;
     background-image: linear-gradient(90deg, #fbf1fb 0%, #d9f3f5 33%, #f7f1fb 68%, #d9f5f5 100%);
 }

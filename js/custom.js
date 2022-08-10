@@ -27,9 +27,9 @@ $(function(){
             }
           },
           {
-            breakpoint: 480,
+            breakpoint: 577,
             settings: {
-              slidesToShow: 1,
+              slidesToShow: 2,
               slidesToScroll: 1
             }
           }
@@ -112,7 +112,7 @@ $(function(){
             }
           },
           {
-            breakpoint: 480,
+            breakpoint: 577,
             settings: {
               slidesToShow: 1,
               slidesToScroll: 1
