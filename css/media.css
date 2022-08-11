@@ -4,8 +4,7 @@
         left: -2%;
     }
     .xs-device-team{
-        display: none;
-            
+        display: none;   
     }
 }
 /* Large devices (portrait phones, less than 1200px) */
@@ -42,9 +41,6 @@
     }
     .solution-container::after {
         top: -6%;
-    }
-    #test::before {
-        top: -40%;
     }
     #pricing::after {
         top: -20%;
@@ -151,6 +147,18 @@
     }
     .xs-device-team{
     display: none;
+    }
+    #test::before {
+        top: -31%;
+    }
+    #test {
+        margin-top: 120px;
+    }
+    #test-pricing {
+        margin-top: 120px;
+    }
+    #test-pricing::before {
+        top: -20%;
     }
     /* About page ends here */
 }
@@ -653,7 +661,27 @@
     #review-about::before {
         top: -14%;
     }
+    .process-card-text h4 {
+        line-height: 36px;
+    }
+    .middle-pricing {
+        padding: 40px 0!important;
+    }
     /* About page ends here */
+    /* Coming-Soon page ends here */
+    .soon-form-input {
+        width: 300px;
+    }
+    .soon-header h1 {
+        font-size: 50px;
+        line-height: 60px;
+    }
+    .soon-header p {
+        font-size: 20px;
+        line-height: 30px;
+        padding-top: 15px;
+    }
+    /* Coming-Soon page ends here */
 }
 
 

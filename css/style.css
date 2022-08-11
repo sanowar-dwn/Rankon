@@ -1016,6 +1016,7 @@ footer{
     opacity: 1;
     background-color: #ffff;
     bottom: -8%;
+    z-index: -9;
 }
 .process-card:hover{
     background-color: #ffffff;
@@ -1334,3 +1335,20 @@ footer{
   }
 /*========== Maps Css ends here ==========*/
 /* ++++++++++++++++++++ CONTACT PAGE CSS ENDS HERE ++++++++++++++++++++ */
+/* ++++++++++++++++++++ PRICING PAGE CSS ENDS HERE ++++++++++++++++++++ */
+/*========== Test-Pricing Css starts here ==========*/
+/*========== Test-Pricing Css starts here ==========*/
+#test-pricing{
+    margin-top: 200px;
+    position: relative;
+}
+#test-pricing::before{
+    content: url('../images/section-shape.png');
+    position: absolute;
+    top: -40%;
+    left: 0;
+}
+/*========== Test-Pricing Css ends here ==========*/
+/*========== Test-Pricing Css ends here ==========*/
+
+/* ++++++++++++++++++++ PRICING PAGE CSS ENDS HERE ++++++++++++++++++++ */
