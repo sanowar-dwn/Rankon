@@ -25,6 +25,21 @@
         align-items: center;
         justify-content: center;
     }
+    body{
+        overflow-x: hidden;
+    }
+    #about::after{
+        display: none;
+    }
+    #pricing::before{
+        display: none;
+    }
+    #review::after {
+        display: none;
+    }
+    #subscribe::before {
+        display: none;
+    }
 }
 /* Mediuam devices (portrait phones, less than 992px) */
 @media(min-width:768px) and (max-width:991.98px){
@@ -40,7 +55,7 @@
         line-height: 25px;
     }
     .solution-container::after {
-        top: -6%;
+        top: -8%;
     }
     #pricing::after {
         top: -20%;
@@ -159,6 +174,24 @@
     }
     #test-pricing::before {
         top: -20%;
+    }
+    header::before{
+        display: none;
+    }
+    #about::after{
+        display: none;
+    }
+    #pricing::before{
+        display: none;
+    }
+    #review::after {
+        display: none;
+    }
+    #subscribe::before {
+        display: none;
+    }
+    .story-counter-medium{
+        display: block;
     }
     /* About page ends here */
 }
@@ -307,6 +340,24 @@
     }
     .xs-device-team{
     display: none;
+    }
+    header::before{
+        display: none;
+    }
+    #about::after{
+        display: none;
+    }
+    #pricing::before{
+        display: none;
+    }
+    #review::after {
+        display: none;
+    }
+    #subscribe::before {
+        display: none;
+    }
+    .story-counter-medium{
+        display: block;
     }
     /* About Page ends here */
 }
@@ -478,6 +529,24 @@
     }
     .xs-device-team{
         display: none;
+    }
+    header::before{
+        display: none;
+    }
+    #about::after{
+        display: none;
+    }
+    #pricing::before{
+        display: none;
+    }
+    #review::after {
+        display: none;
+    }
+    #subscribe::before {
+        display: none;
+    }
+    .story-counter-medium{
+        display: block;
     }
     /* About page ends here */
 }
@@ -681,7 +750,31 @@
         line-height: 30px;
         padding-top: 15px;
     }
+    .contact-form-input {
+        width: 350px;
+    }
+    .contact-form-textarea {
+        width: 350px;
+    }
     /* Coming-Soon page ends here */
+    header::before{
+        display: none;
+    }
+    #about::after{
+        display: none;
+    }
+    #pricing::before{
+        display: none;
+    }
+    #review::after {
+        display: none;
+    }
+    #subscribe::before {
+        display: none;
+    }
+    .story-counter-medium{
+        display: block;
+    }
 }
 
 

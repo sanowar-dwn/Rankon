@@ -20,6 +20,7 @@ body{
     width: 100%;
     font-family: 'Nunito', sans-serif;
     background-image: linear-gradient(90deg, #fbf1fb 0%, #d9f3f5 33%, #f7f1fb 68%, #d9f5f5 100%);
+    overflow-x: hidden!important;
 }
 .text-color-secondary{
     color: #ff595a;
@@ -28,6 +29,13 @@ body{
 /*========== Header Css starts here ==========*/
 header{
     margin-top: 8px;
+    position: relative;
+}
+header::before {
+    content: url('../images/body-shape.png');
+    position: absolute;
+    top: -146%;
+    left: -49%;
 }
 .nav-item{
     padding-left: 20px;
@@ -141,11 +149,11 @@ header{
 #about{
     position: relative;
 }
-#about::before{
-    content: url('../images/section-shape.png');
+#about::after {
+    content: url('../images/body-shape-2.png');
     position: absolute;
-    top: -25%;
-    left: 0;
+    top: -44%;
+    right: -13%;
 }
 .about-right-header h4{
     font-size: 18px;
@@ -210,7 +218,8 @@ header{
 /*========== Solution Css starts here ==========*/
 #solution{
     padding-top: 90px;
-}.solution-container{
+}
+.solution-container{
     position: relative;
 }
 .solution-header h4{
@@ -391,6 +400,12 @@ header{
     position: relative;
     margin-top: 120px;
 }
+#pricing::before{
+    content: url('../images/body-shpae-3.png');
+    position: absolute;
+    top: 0;
+    left: 0;
+}
 #pricing::after{
     content: url('../images/section-shape.png');
     position: absolute;
@@ -536,6 +551,9 @@ header{
     padding-top: 38px;
     padding-bottom: 45px;
 }
+.story-counter-medium{
+    display: none;
+}
 .story-counter-head h4{
     font-size: 40px;
     line-height: 30px;
@@ -566,6 +584,12 @@ header{
 #review{
     margin-bottom: 150px;
     position: relative;
+}
+#review::after {
+    content: url('../images/body-shape-4.png');
+    position: absolute;
+    top: 9%;
+    right: -17%;
 }
 #review::before{
     content: url('../images/section-shape.png');
@@ -761,6 +785,12 @@ header{
     margin-top: 150px;
     margin-bottom: 150px;
     position: relative;
+}
+#subscribe::before {
+    content: url('../images/body-shape-5.png');
+    position: absolute;
+    top: -138%;
+    left: -33%;
 }
 #subscribe::after{
     content: url('../images/section-shape.png');
@@ -1050,6 +1080,9 @@ footer{
 #team{
     margin-top: 70px;
     margin-bottom: 150px;
+}
+.xs-device-team{
+    display: none;
 }
 .team-section-header{
     padding-bottom: 70px;
