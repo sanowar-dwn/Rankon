@@ -551,6 +551,9 @@
     .review-right {
         padding-top: 180px;
     }
+    .team-card{
+        margin: 0 auto;
+    }
     /* About page ends here */
 }
 @media(max-width:412px){
@@ -773,6 +776,9 @@
     }
     .review-right {
         padding-top: 180px;
+    }
+    .team-card{
+        margin: 0 auto;
     }
 }
 
