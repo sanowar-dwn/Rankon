@@ -1244,10 +1244,8 @@ footer{
     font-weight: 400;
     text-align: center;
 }
-.soon-form-input{
-    padding: 16px 26px;
-    width: 445px;
-    height: 54px;
+.soon-form-input {
+    padding: 16px 206px 16px 30px;
     border-radius: 27px;
     filter: drop-shadow(0px 10px 15px rgba(0,0,0,0.1));
     border: none;
@@ -1309,15 +1307,11 @@ footer{
 }
 .contact-form-input{
     padding: 16px 26px;
-    width: 445px;
-    height: 54px;
     border-radius: 27px;
     filter: drop-shadow(0px 10px 15px rgba(0,0,0,0.1));
     border: none;
 }
 .contact-form-textarea{
-    width: 445px;
-    height: 200px;
     border-radius: 20px;
     background-color: #ffffff;
     border: none;
